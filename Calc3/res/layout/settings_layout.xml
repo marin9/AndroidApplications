@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:background="#000000" >
+  
+  <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/settings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Settings"
+        android:textColor="#FF0000"
+        android:textSize="40sp" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp" >
+
+            <TextView
+                android:id="@+id/vibration"
+                style="@style/settings_text_label"
+                android:text="Vibration:" />
+
+            <CheckBox
+                android:id="@+id/checkBox_vib"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#0000FF"
+                android:onClick="pressButton"
+                android:text="On"
+                android:textColor="#000000"
+                android:textSize="25sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp" >
+
+            <TextView
+                android:id="@+id/color"
+                style="@style/settings_text_label"
+                android:text="Color:" />
+
+            <CheckBox
+                android:id="@+id/checkBox_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#0000FF"
+                android:onClick="pressButton"
+                android:text="On"
+                android:textColor="#000000"
+                android:textSize="25sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp" >
+
+            <TextView
+                android:id="@+id/textViewDegRad"
+                style="@style/settings_text_label"
+                android:text="Deg/Rad: " />
+
+            <CheckBox
+                android:id="@+id/checkBox_rad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#0000FF"
+                android:onClick="pressButton"
+                android:text="Rad"
+                android:textColor="#000000"
+                android:textSize="25sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp" >
+
+            <TextView
+                android:id="@+id/round"
+                android:textSize="35dp"
+                android:textColor="#FF0000"
+                android:text="Round:" />
+
+            <TextView
+                android:id="@+id/roundNumber"
+                android:textSize="35dp"
+                android:textColor="#FF0000"
+                android:text="15" />
+
+            <Button
+                android:id="@+id/rbt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:background="#FFAF00"
+                android:onClick="pressButton"
+                android:layout_weight="2"
+                android:tag="-"
+                android:text="&lt;"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/rbt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:background="#FFAF00"
+                android:onClick="pressButton"
+                android:layout_weight="2"
+                android:tag="+"
+                android:text=">"
+                android:textSize="25sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp" >
+
+            <TextView
+                android:id="@+id/textViewMod"
+                style="@style/settings_text_label"
+                android:text="Mod: " />
+
+            <RadioGroup
+                    android:id="@+id/radioGroup1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <RadioButton
+                        android:id="@+id/radio0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:onClick="pressButton"
+                        android:text="Basic"
+                        android:textColor="#00FF00" />
+
+                    <RadioButton
+                        android:id="@+id/radio1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#00FF00"
+                        android:onClick="pressButton"
+                        android:text="Scientific " />
+
+                    <RadioButton
+                        android:id="@+id/radio2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#00FF00"
+                        android:onClick="pressButton"
+                        android:text="Base" />
+                </RadioGroup>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp" >
+
+            <Button
+                android:id="@+id/cancleButton"
+                style="@style/light_red_buttons"
+                android:layout_width="wrap_content"
+                android:text="Close" />
+
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>
+</ScrollView>
+

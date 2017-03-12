@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RadioGroup
+            android:id="@+id/radioGroup1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/radio0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Phone   "
+                android:textColor="#00FFFF" />
+
+            <RadioButton
+                android:id="@+id/radio1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SD card   "
+                android:textColor="#00FFFF" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/start_button"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_weight="0.5"
+            android:background="#00A000"
+            android:minHeight="30dip"
+            android:onClick="start"
+            android:text="Scan" />
+
+        <Button
+            android:id="@+id/stop_button"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_weight="0.5"
+            android:background="#C00000"
+            android:minHeight="30dip"
+            android:onClick="stop"
+            android:text="Stop" />
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"       
+        android:padding="5dp" />
+
+    <TextView
+        android:id="@+id/message_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:text="  Ready :)  "
+        android:textColor="#00FFFF" />
+
+    <TextView
+        android:id="@+id/picture_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  Picture:"
+        android:textColor="#00FFFF" />
+
+    <ProgressBar
+        android:id="@+id/picture_progress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"        
+        android:padding="5dp"
+        android:progressDrawable="@drawable/progress_green" />
+
+    <TextView
+        android:id="@+id/music_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="\n  Music:"
+        android:textColor="#00FFFF" />
+
+    <ProgressBar
+        android:id="@+id/music_progress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"     
+        android:padding="5dp"
+        android:progressDrawable="@drawable/progress_blue" />
+
+    <TextView
+        android:id="@+id/video_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="\n  Video:"
+        android:textColor="#00FFFF" />
+
+    <ProgressBar
+        android:id="@+id/video_progress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"     
+        android:padding="5dp"
+        android:progressDrawable="@drawable/progress_yellow" />
+
+    <TextView
+        android:id="@+id/application_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="\n  Application:"
+        android:textColor="#00FFFF" />
+
+    <ProgressBar
+        android:id="@+id/application_progress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"     
+        android:padding="5dp"
+        android:progressDrawable="@drawable/progress_red" />
+
+    <TextView
+        android:id="@+id/documents_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="\n  Documents:"
+        android:textColor="#00FFFF" />
+
+    <ProgressBar
+        android:id="@+id/documents_progress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"     
+        android:padding="5dp"
+        android:progressDrawable="@drawable/progress_brown" />
+
+    <TextView
+        android:id="@+id/others_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="\n  Others:"
+        android:textColor="#00FFFF" />
+
+    <ProgressBar
+        android:id="@+id/others_progress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"     
+        android:padding="5dp"
+        android:progressDrawable="@drawable/progress_purple" />
+
+    <TextView
+        android:id="@+id/totalSpaceText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="\n  Total space: "
+        android:textColor="#00FFFF" />
+
+    <TextView
+        android:id="@+id/freeSpaceText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  Free space: "
+        android:textColor="#00FFFF" />
+
+</LinearLayout>

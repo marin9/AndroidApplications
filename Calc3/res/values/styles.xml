@@ -1,0 +1,127 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    
+    
+    
+    <style name="settings_text_label" >
+        <item name="android:textSize"> 35dp </item>
+        <item name="android:textColor">#FF0000</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+    
+    
+    <style name="red_buttons" >
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_margin"> 2dp </item>
+        <item name="android:textSize"> 30dp </item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@drawable/text_shape</item>
+        <item name="android:background">@drawable/button_shape_red</item>
+        <item name="android:onClick">pressButton</item>
+    </style>  
+    
+    <style name="orange_buttons" >
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_margin"> 2dp </item>
+        <item name="android:textSize"> 30dp </item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@drawable/text_shape</item>
+        <item name="android:background">@drawable/button_shape_orange</item>
+        <item name="android:onClick">pressButton</item>
+    </style>  
+    
+    <style name="green_buttons" >
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_margin"> 2dp </item>
+        <item name="android:textSize"> 30dp </item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@drawable/text_shape</item>
+        <item name="android:background">@drawable/button_shape_green</item>
+        <item name="android:onClick">pressButton</item>
+    </style>  
+    
+    <style name="blue_buttons" >
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_margin"> 2dp </item>
+        <item name="android:textSize"> 30dp </item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@drawable/text_shape</item>
+        <item name="android:background">@drawable/button_shape_blue</item>
+        <item name="android:onClick">pressButton</item>
+    </style>  
+    
+    
+    
+    <style name="light_red_buttons" >
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_margin"> 2dp </item>
+        <item name="android:textSize"> 30dp </item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@drawable/dark_text_shape</item>
+        <item name="android:background">@drawable/light_shape_red</item>
+        <item name="android:onClick">pressButton</item>
+    </style>  
+    
+    <style name="light_orange_buttons" >
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_margin"> 2dp </item>
+        <item name="android:textSize"> 30dp </item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@drawable/dark_text_shape</item>
+        <item name="android:background">@drawable/light_shape_orange</item>
+        <item name="android:onClick">pressButton</item>
+    </style>  
+    
+    <style name="light_green_buttons" >
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_margin"> 2dp </item>
+        <item name="android:textSize"> 30dp </item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@drawable/dark_text_shape</item>
+        <item name="android:background">@drawable/light_shape_green</item>
+        <item name="android:onClick">pressButton</item>
+    </style>  
+    
+    <style name="light_blue_buttons" >
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_margin"> 2dp </item>
+        <item name="android:textSize"> 30dp </item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@drawable/dark_text_shape</item>
+        <item name="android:background">@drawable/light_shape_blue</item>
+        <item name="android:onClick">pressButton</item>
+    </style>  
+
+</resources>

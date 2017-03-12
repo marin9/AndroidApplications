@@ -1,0 +1,239 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical"
+    android:paddingTop="2dp"
+    tools:context="marin.bralic.calc.MainActivity" >
+
+    <marin.bralic.calc.Display
+        android:id="@+id/display"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/button_s"
+            android:text="S"
+            style="@style/blue_buttons"/>
+
+        <Button
+            android:id="@+id/button_left"
+            android:text="\u25C1"
+            style="@style/blue_buttons"/>
+
+        <Button
+            android:id="@+id/button_right"
+            android:text="\u25B7"
+            style="@style/blue_buttons"/>
+
+        <Button
+            android:id="@+id/button_c_P"
+            android:text="C"
+            style="@style/red_buttons"/>
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/button_ans_sin"
+            android:text="ans"
+            style="@style/green_buttons"/>
+
+        <Button
+            android:id="@+id/button_pi_cos_arg"
+            android:text="\u03C0"
+            style="@style/green_buttons"/>
+
+        <Button
+            android:id="@+id/button_e_tan_cnj"
+            android:text="e\u207F"
+            style="@style/green_buttons"/>
+
+        <Button
+            android:id="@+id/button_del_B"
+            android:text="Del"
+            style="@style/red_buttons"/>
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/button_pn_asin"
+            style="@style/green_buttons"
+            android:text="x\u207F" />
+
+        <Button
+            android:id="@+id/button_nsqrt_acos_abi"
+            style="@style/green_buttons"
+            android:text="\u207F\u221Ax" />
+
+        <Button
+            android:id="@+id/button_p1_atan_toAfi"
+            android:text="x^-1"
+            style="@style/green_buttons"/>
+
+        <Button
+            android:id="@+id/button_ln_log_i"
+            android:text="ln"
+            style="@style/green_buttons"/>
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/button_sqrt_n"
+            android:text="\u221Ax"
+            style="@style/green_buttons"/>
+
+        <Button
+            android:id="@+id/button_open"
+            android:text="("
+            style="@style/green_buttons"/>
+
+        <Button
+            android:id="@+id/button_close"
+            android:text=")"
+            style="@style/green_buttons"/> 
+
+        <Button
+            android:id="@+id/button_p2_abs"
+            android:text="x\u2072"
+            style="@style/green_buttons"/>
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/button7"
+            android:text="7"
+            style="@style/orange_buttons"/> 
+
+        <Button
+            android:id="@+id/button8"
+            android:text="8"
+            style="@style/orange_buttons"/> 
+
+        <Button
+            android:id="@+id/button9_deg_rad"
+            android:text="9"
+            style="@style/orange_buttons"/> 
+
+        <Button
+            android:id="@+id/button_plus_settings"
+            android:text="+"
+            style="@style/orange_buttons"/>
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/button4"
+            android:text="4"
+            style="@style/orange_buttons"/> 
+
+        <Button
+            android:id="@+id/button5"
+            android:text="5"
+            style="@style/orange_buttons"/> 
+
+        <Button
+            android:id="@+id/button6"
+            android:text="6"
+            style="@style/orange_buttons"/> 
+
+        <Button
+            android:id="@+id/button_minus_qveq"
+            android:text="-"
+            style="@style/orange_buttons"/> 
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/button1_up"
+            android:text="1"
+            style="@style/orange_buttons"/> 
+
+        <Button
+            android:id="@+id/button2"
+            android:text="2"
+            style="@style/orange_buttons"/> 
+
+        <Button
+            android:id="@+id/button3"
+            android:text="3"
+            style="@style/orange_buttons"/> 
+
+        <Button
+            android:id="@+id/button_mull_sum"
+            android:text="x"
+            style="@style/orange_buttons"/> 
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/button0_down"
+            android:text="0"
+            style="@style/orange_buttons"/> 
+
+        <Button
+            android:id="@+id/button_point_const"
+            android:text="."
+            style="@style/orange_buttons"/>
+
+        <Button
+            android:id="@+id/button_eq_mem"
+            android:text="="
+            style="@style/orange_buttons"/>
+
+        <Button
+            android:id="@+id/button_div_cmplx"
+            android:text="/"
+            style="@style/orange_buttons"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,78 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <TextView
+        android:id="@+id/textView_app_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Tic-Tac-Toe"
+        android:textColor="#0000FF"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:typeface="normal" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:padding="20dp"
+        android:showText="true"
+        android:text="Board size"
+        android:textColor="#00FFFF"
+        android:textOff="3x3"
+        android:textOn="5x5"
+        android:textSize="20sp"
+        android:thumb="@drawable/switch_selector1"
+        android:track="@drawable/sw" />
+
+    <Switch
+        android:id="@+id/switch2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:padding="20dp"
+        android:showText="true"
+        android:text="Players"
+        android:textColor="#00FFFF"
+        android:textOff="1"
+        android:textOn="2"
+        android:textSize="20sp"
+        android:thumb="@drawable/switch_selector2"
+        android:track="@drawable/sw" />
+
+    <Switch
+        android:id="@+id/switch3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:padding="20dp"
+        android:showText="true"
+        android:text="Your sign\n(Only if 1 player)"
+        android:textColor="#00FFFF"
+        android:textOff="X"
+        android:textOn="O"
+        android:textSize="20sp"
+        android:thumb="@drawable/switch_selector3"
+        android:track="@drawable/sw" />
+
+    <Button
+        android:id="@+id/button_start"
+        android:onClick="start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/button_shape_green"
+        android:text="Start"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:typeface="monospace" />
+
+</LinearLayout>

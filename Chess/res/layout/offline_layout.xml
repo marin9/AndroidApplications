@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/buttonExit"
+            android:background="@drawable/button_selector"
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textAllCaps="false"
+            android:onClick="exit"
+            android:text="Exit"
+            android:textColor="#FF0000"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/buttonNewGame"
+            android:background="@drawable/button_selector"
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textAllCaps="false"
+            android:layout_weight="1"
+            android:onClick="newGame"
+            android:text="New Game"
+            android:textColor="#FFA000"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/buttonLastMove"
+            android:background="@drawable/button_selector"
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:layout_weight="1"
+            android:onClick="showLastMove"
+            android:text="Last move"
+            android:textColor="#00FF00"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <marin.bralic.application.BoardView
+        android:id="@+id/boardView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp" />
+
+    <marin.bralic.application.PlayerStatusView
+        android:id="@+id/playerStatusView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp" />
+
+</LinearLayout>

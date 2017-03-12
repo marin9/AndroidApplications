@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="marin.bralic.calc"
+    android:versionCode="1"
+    android:versionName="1.0" 
+    
+    xmlns:tools="http://schemas.android.com/tools" 
+    tools:ignore="RtlEnabled">
+
+    <uses-sdk
+        android:minSdkVersion="21"
+        android:targetSdkVersion="26" />
+    
+    <uses-permission android:name="android.permission.VIBRATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="M3Calc"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="M3Calc" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
